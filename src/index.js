@@ -1,8 +1,13 @@
-
-import { saludar } from './javascript/components';
 import './styles.css';
-// import img from './assets/foto2.png';
+import { Todo, TodoList } from './classes/index';
+import { crearHtml } from './javascript/components';
 
-const nombre = "Felipe";
 
-saludar(nombre);
+export const todoList = new TodoList();
+todoList.todos.forEach( crearHtml );
+
+
+
+
+
+
